@@ -7,25 +7,16 @@ test("button click flow", () => {
 
     // find the button
     const buttonElement = screen.getByRole("button", { name: /blue/i });
-    
+
     // check initial color
     expect(buttonElement).toHaveClass("red");
 
     //click the button
-    fireEvent.click(buttonElement)
+    fireEvent.click(buttonElement);
 
     //check button text
-    buttonElement.toHaveTextContent(/red/i)
-    
+    expect(buttonElement).toHaveTextContent(/red/i);
+
     //check the button color
-    expect(buttonElement).toHaveClass('blue')
-
+    expect(buttonElement).toHaveClass("blue");
 });
-test("button has with correct color after click", () => {
-    
-
-    
-
-    // 
-});
-
