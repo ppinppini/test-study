@@ -8,6 +8,9 @@ function App() {
             <button className={buttonColor} onClick={()=>setButtonColor(nextColor)}>
                 Change to {nextColor}
             </button>
+            <br />
+            <input type="checkbox" id="disable-button-checkbox" defaultChecked={false} />
+            <label htmlFor="disable-button-checkbox">disable button</label>
         </div>
     );
 }
